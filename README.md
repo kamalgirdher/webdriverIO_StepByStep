@@ -52,10 +52,9 @@ This will install all the required packages. And you'd see under node_modules.
 
 ![Porject.json](/images/project_json_after_npm_install_webdriverio.png)
 
-5.
-
-
-       or 
-   npm i --save-dev @wdio/cli
+5. npm install @wdio/cli --save-dev
+   
+   This installs wdio cli (testrunner) and brings wdio.config which helps in parameterizing various properties like browser type, url etc.
+   
    
    
