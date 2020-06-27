@@ -19,7 +19,8 @@ node -v
 then type
 ```
 npm -v
+```
 
 ![NPM version](/images/npmversion.png)
-```
+
 
