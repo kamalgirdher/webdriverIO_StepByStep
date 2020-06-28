@@ -1,4 +1,4 @@
-# WebdriverIO Step by Step Tutorials
+# WebdriverIO Step by Step Tutorials - (Mocha + Chai)
 
 ## Installation
 
@@ -94,3 +94,5 @@ npm install @wdio/cli --save-dev
 ```
 	npm install chai-webdriverio --save-dev
 ```
+
+9. Open wdio.config.js
