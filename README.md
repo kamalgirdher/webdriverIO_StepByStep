@@ -1,6 +1,6 @@
 # WebdriverIO Step by Step Tutorials - (Mocha + Chai)
 
-## Installation
+## 1. Installation
 
 1. Download & install Microsoft VS Code.
 
@@ -25,7 +25,7 @@ npm -v
 
 
 
-## Create a project in VS Code
+## 2. Create a project in VS Code
 
 1. Click **Add Folder** and select the folder.
 
@@ -96,10 +96,9 @@ npm install @wdio/cli --save-dev
 ```
 
 
-## What is Package.json?
+## 3. What is Package.json?
 
 Now if you open package.json, it should appear like this.
-
 
 ```
 {
@@ -109,7 +108,7 @@ Now if you open package.json, it should appear like this.
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  }	1q`,
   "author": "Kamal Girdher",
   "license": "ISC",
   "devDependencies": {
@@ -130,7 +129,6 @@ Now if you open package.json, it should appear like this.
 }
 
 ```
-
 
 To specify the packages your project depends on "dependencies" or "devDependencies". When you run npm install, npm will download dependencies and devDependencies that are listed in package.json that meet the semantic version requirements listed for each.
 
