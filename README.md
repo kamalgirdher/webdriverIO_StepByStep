@@ -96,7 +96,8 @@ npm install @wdio/cli --save-dev
 ```
 
 
-## 3. What is Package.json?
+
+## 3. Package.json
 
 Now if you open package.json, it should appear like this.
 
@@ -152,4 +153,57 @@ npm install <package-name> --save-dev
 This is what we were doing during installation steps.
 
 
+
+## 3. wdio.conf.js
+
+Now, have a look at wdio.conf.js. I have removed all the comments to make is readable. However, you'd see lot of comments in the wdio.conf.js generated in your project.
+
+```
+exports.config = {
+    runner: 'local',
+
+    specs: [
+        './test/specs/**/*.js'
+    ],
+    
+    exclude: [
+    ],
+    
+    maxInstances: 10,
+    
+    capabilities: [{
+        maxInstances: 5,
+        browserName: 'firefox',
+    }],
+    logLevel: 'info',
+    
+    bail: 0,
+    
+    baseUrl: 'https://the-internet.herokuapp.com/',
+    
+    waitforTimeout: 10000,
+    
+    connectionRetryTimeout: 120000,
+    
+    connectionRetryCount: 3,
+    
+    services: ['selenium-standalone'],
+    
+    
+    framework: 'mocha',
+    
+    reporters: ['spec','dot','html'],
+
+    mochaOpts: {
+        ui: 'bdd',
+        timeout: 60000
+    },
+}
+```
+
+For now, we are changing the baseUrl.
+
+```
+baseUrl: 'https://the-internet.herokuapp.com/',
+```
 
