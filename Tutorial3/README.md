@@ -7,7 +7,7 @@ npm install webdriverio --save-dev
 ```
 This will install all the required packages. And you'd see under node_modules.
 
-![Porject.json](/../images/project_json_after_npm_install_webdriverio.png)
+![Porject.json](/images/project_json_after_npm_install_webdriverio.png)
 
 5.  Then install wdio cli (testrunner)
 ```

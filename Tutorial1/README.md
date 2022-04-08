@@ -12,12 +12,12 @@ In command prompt, type the command
 node -v
 ```
 
-![Node version](/../images/nodeversion.png)
+![Node version](/images/nodeversion.png)
 
 then type
 ```
 npm -v
 ```
 
-![NPM version](/../images/npmversion.png)
+![NPM version](/images/npmversion.png)
 
