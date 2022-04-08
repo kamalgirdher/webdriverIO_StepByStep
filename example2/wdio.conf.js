@@ -7,7 +7,6 @@ exports.config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     runner: 'local',
-    //
     // ==================
     // Specify Test Files
     // ==================
@@ -17,7 +16,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './src/test/specs/**/*.js'
+        './test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -65,7 +64,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'debug',
+    logLevel: 'info',
     //
     // Set specific log levels per logger
     // loggers:
@@ -89,14 +88,14 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://the-internet.herokuapp.com/',
+    baseUrl: '/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 90000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -118,16 +117,11 @@ exports.config = {
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
     //
-    // Whether or not retried specfiles should be retried immediately or deferred to the end of the queue
-    // specFileRetriesDeferred: false,
-    //
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: ['spec','dot'],
-
-
-    
+    reporters: ['spec'],
+ 
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
@@ -149,17 +143,6 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      */
     // onPrepare: function (config, capabilities) {
-    // },
-    /**
-     * Gets executed before a worker process is spawned and can be used to initialise specific service
-     * for that worker as well as modify runtime environments in an async fashion.
-     * @param  {String} cid      capability id (e.g 0-0)
-     * @param  {[type]} caps     object containing capabilities for session that will be spawn in the worker
-     * @param  {[type]} specs    specs to be run in the worker process
-     * @param  {[type]} args     object that will be merged with the main configuration once worker is initialised
-     * @param  {[type]} execArgv list of string arguments passed to the worker process
-     */
-    // onWorkerStart: function (cid, caps, specs, args, execArgv) {
     // },
     /**
      * Gets executed just before initialising the webdriver session and test framework. It allows you
@@ -189,17 +172,8 @@ exports.config = {
      * Hook that gets executed before the suite starts
      * @param {Object} suite suite details
      */
-    beforeSuite: function (suite) {
-
-        const chai = require('chai')
-        const chaiwebdriver = require('chai-webdriverio').default
-
-        chai.use(chaiwebdriver(browser))
-
-        global.assert = chai.assert
-        global.should = chai.should
-        global.expect = chai.expect
-     },
+    // beforeSuite: function (suite) {
+    // },
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
