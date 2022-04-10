@@ -1,5 +1,8 @@
 # Wdio.conf.js 
 
+### VIDEO : https://www.youtube.com/watch?v=wDzTDtJCCr0&list=PL1R_HJw0CDYINo9V4idr8ToT1GnNDER4X&index=3
+
+
 1. Install WebdriverIO
 
 ```
