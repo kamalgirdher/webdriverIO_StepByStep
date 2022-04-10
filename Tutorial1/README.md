@@ -2,7 +2,7 @@
 
 1. Download & install Microsoft VS Code.
 
-2. Download & install NodeJS.
+2. Download & install NodeJS.(https://nodejs.org/en/download/)
 
 3. Check if node and npm installed correctly.
 

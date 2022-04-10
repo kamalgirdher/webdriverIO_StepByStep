@@ -1,0 +1,21 @@
+{
+  "name": "wdio_playground",
+  "version": "1.0.0",
+  "description": "this is our first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamal Girdher",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^7.19.3",
+    "@wdio/dot-reporter": "^7.19.1",
+    "@wdio/jasmine-framework": "^7.19.3",
+    "@wdio/local-runner": "^7.19.3",
+    "@wdio/spec-reporter": "^7.19.1",
+    "chromedriver": "^100.0.0",
+    "wdio-chromedriver-service": "^7.3.2",
+    "webdriverio": "^7.19.3"
+  }
+}
