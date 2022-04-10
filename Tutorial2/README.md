@@ -2,6 +2,8 @@
 
 ### VIDEO : https://www.youtube.com/watch?v=UaMswsX4DJk&list=PL1R_HJw0CDYINo9V4idr8ToT1GnNDER4X&index=2
 
+
+
 1. Click **Add Folder** and select the folder.
 
 2. Open Terminal (Go to View > Terminal). And move to the folder.
